@@ -1,5 +1,6 @@
 package test.multy.io.btpay;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+        startActivity(new Intent(this, SecondActivity.class));
     }
 
     @Override

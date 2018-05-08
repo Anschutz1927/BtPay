@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply from: 'dependencies.gradle'
 
 android {
     compileSdkVersion 26
@@ -16,7 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '27.0.1'
+    buildToolsVersion '27.0.3'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -34,4 +35,12 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.android.support:cardview-v7:26.1.0'
     implementation 'com.android.support:design:26.1.0'
+    implementation 'com.daimajia.swipelayout:library:1.2.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+
+    implementation 'com.google.firebase:firebase-core:12.0.1'
+    implementation 'com.github.khirr:Android-Foreground-Detection:1.0.1'
+    implementation 'me.dm7.barcodescanner:zbar:1.9.8'
+    implementation 'io.branch.sdk.android:library:2.16.0'
+    implementation 'com.github.tozny:java-aes-crypto:1.1.0'
 }
